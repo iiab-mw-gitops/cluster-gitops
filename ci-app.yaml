@@ -25,8 +25,8 @@ spec:
           prune: true
           selfHeal: true
       source:
-        repoURL: https://github.com/iiab-mw-gitops/cluster-gitops.git
+        repoURL: https://github.com/iiab-mw-gitops/prod-cluster-gitops.git
         targetRevision: master
-        path: ace/environments/ci
+        path: .
       destination:
         server: '{{url}}'
