@@ -20,13 +20,9 @@ spec:
       name: '{{cluster}}-ci-app'
     spec:
       project: default
-      syncPolicy:
-        automated:
-          prune: true
-          selfHeal: true
       source:
-        repoURL: https://github.com/iiab-mw-gitops/prod-cluster-gitops.git
+        repoURL: https://github.com/iiab-mw-gitops/cluster-gitops.git
         targetRevision: master
-        path: .
+        path: ace/environments/ci
       destination:
         server: '{{url}}'
