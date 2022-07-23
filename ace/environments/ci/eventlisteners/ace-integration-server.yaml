@@ -2,6 +2,7 @@ apiVersion: triggers.tekton.dev/v1alpha1
 kind: EventListener
 metadata:
   name: ace-integration-server
+  namespace: ci  
 spec:
   serviceAccountName: pipeline
   triggers:

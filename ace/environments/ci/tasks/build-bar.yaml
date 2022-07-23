@@ -2,6 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
   name: build-bar
+  namespace: ci  
 spec:
   params:
     - name: is-source-directory

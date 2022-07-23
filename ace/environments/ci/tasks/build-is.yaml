@@ -2,6 +2,7 @@ kind: Task
 apiVersion: tekton.dev/v1beta1
 metadata:
   name: build-integration-server
+  namespace: ci  
 spec:
   params:
     - name: is_manifest_template

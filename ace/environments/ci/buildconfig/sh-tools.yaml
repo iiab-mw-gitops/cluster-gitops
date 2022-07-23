@@ -2,6 +2,7 @@ apiVersion: build.openshift.io/v1
 kind: BuildConfig
 metadata:
   name: sh-tools
+  namespace: ci
 spec:
   output:
     to:

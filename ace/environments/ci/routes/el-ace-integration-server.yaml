@@ -3,6 +3,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata: 
   name: el-ace-integration-server
+  namespace: ci  
 spec: 
   port: 
     targetPort: http-listener

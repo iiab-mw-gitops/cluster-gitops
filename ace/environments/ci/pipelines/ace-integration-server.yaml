@@ -2,6 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
   name: ace-integration-server
+  namespace: ci
 spec:
   params:
     - name: is-source-repo-url
