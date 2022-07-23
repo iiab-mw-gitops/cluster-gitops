@@ -59,7 +59,6 @@ resources:
   - secrets/github-user-token-secret-cicd-acme.yaml
 patches:
 - target:
-    group: argoproj.io
     kind: Application
   patch: |-
     - op: replace
