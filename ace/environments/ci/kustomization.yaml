@@ -62,5 +62,5 @@ patches:
     kind: Application
   patch: |-
     - op: replace
-      path: /spec/destination/namespace
+      path: /metadata/namespace
       value: openshift-gitops
