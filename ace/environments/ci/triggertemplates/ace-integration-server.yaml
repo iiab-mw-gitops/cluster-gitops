@@ -18,13 +18,13 @@ spec:
       spec:
         params:
           - name: is-source-repo-url
-            value: ssh://git@github.com:$(tt.params.git-org)/$(tt.params.source-repo).git
+            value: git@github.com:$(tt.params.git-org)/$(tt.params.source-repo).git
           - name: is-infra-repo-url
-            value: ssh://git@github.com:$(tt.params.git-org)/ace-infra.git
+            value: git@github.com:$(tt.params.git-org)/ace-infra.git
           - name: git-ops-repo-url
-            value: ssh://git@github.com:$(tt.params.git-org)/cluster-gitops.git
+            value: git@github.com:$(tt.params.git-org)/cluster-gitops.git
           - name: gitops-apps-repo-full-name
-            value: ssh://$(tt.params.git-org)/cluster-gitops
+            value: $(tt.params.git-org)/cluster-gitops
         pipelineRef:
           name: ace-integration-server
         serviceAccountName: pipeline
