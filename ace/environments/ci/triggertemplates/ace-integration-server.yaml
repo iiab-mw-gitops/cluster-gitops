@@ -34,10 +34,10 @@ spec:
               claimName: ace-integration-server
           - name: ace-infra-repo-secret
             secret:
-              secretName: ace-infra-at-github
+              secretName: ace-infra-at-github-ssh
           - name: gitops-repo-secret
             secret:
-              secretName: cluster-gitops-at-github
+              secretName: cluster-gitops-at-github-ssh
           - name: ace-source-repo-secret
             secret:
-              secretName: $(tt.params.source-repo)-at-github
+              secretName: $(tt.params.source-repo)-at-github-ssh
