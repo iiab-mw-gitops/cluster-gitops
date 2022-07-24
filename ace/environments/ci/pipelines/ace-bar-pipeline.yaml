@@ -29,7 +29,7 @@ spec:
 
   - name: git-ops-repo-url
     type: string
-    default: https://github.com/cloud-native-toolkit-demos/dr-cluster-gitops-apps.git
+    default: https://github.com/cloud-native-toolkit-demos/cluster-gitops.git
   - name: git-ops-repo-private-key
     type: string
     default: '""'

@@ -9,5 +9,5 @@ data:
   owner: cloud-native-toolkit-demos
   parentdir: .
   protocol: https
-  repo: dr-cluster-gitops-apps
-  url: https://github.com/cloud-native-toolkit-demos/dr-cluster-gitops-apps.git
+  repo: cluster-gitops
+  url: https://github.com/cloud-native-toolkit-demos/cluster-gitops.git
