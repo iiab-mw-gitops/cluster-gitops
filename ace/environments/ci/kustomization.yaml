@@ -57,3 +57,6 @@ resources:
   - secrets/gitops-repo-pk-secret-service-repo-at-github.yaml
   - secrets/gitops-webhook-token.yaml
   - secrets/github-user-token-secret-cicd-acme.yaml
+
+commonAnnotations :
+   argocd.argoproj.io/sync-options : SkipDryRunOnMissingResource=true
