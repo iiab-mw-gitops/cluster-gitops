@@ -15,7 +15,7 @@ spec:
             - name: secretRef
               value:
                 secretName: gitops-webhook-token
-                secretKey: webhook-token
+                secretKey: WebHookSecretKey
         - name: "CEL filter: only when coming from master branch"
           ref:
             name: cel
