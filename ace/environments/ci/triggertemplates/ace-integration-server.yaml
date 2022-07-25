@@ -22,22 +22,22 @@ spec:
           - name: is-infra-repo-url
             value: git@github.com:$(tt.params.git-org)/ace-infra.git
           - name: git-ops-repo-url
-            value: git@github.com:$(tt.params.git-org)/dr-cluster-gitops-apps.git
+            value: git@github.com:$(tt.params.git-org)/cluster-gitops.git
           - name: gitops-apps-repo-full-name
-            value: $(tt.params.git-org)/dr-cluster-gitops-apps
+            value: $(tt.params.git-org)/cluster-gitops
         pipelineRef:
           name: ace-integration-server
         serviceAccountName: pipeline
         workspaces:
           - name: shared-workspace
             persistentVolumeClaim:
-              claimName: ace-config-pvc
+              claimName: ace-integration-server
           - name: ace-infra-repo-secret
             secret:
-              secretName: ace-infra-at-github
+              secretName: ace-infra-at-github-ssh
           - name: gitops-repo-secret
             secret:
-              secretName: dr-cluster-gitops-apps-at-github
+              secretName: cluster-gitops-at-github-ssh
           - name: ace-source-repo-secret
             secret:
-              secretName: $(tt.params.source-repo)-at-github
+              secretName: $(tt.params.source-repo)-at-github-ssh
