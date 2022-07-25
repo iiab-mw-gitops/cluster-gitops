@@ -18,11 +18,11 @@ spec:
       spec:
         params:
           - name: is-source-repo-url
-            value: https://AnasHijazi@github.com/$(tt.params.git-org)/$(tt.params.source-repo).git
+            value: https://AnasHijazi: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@github.com/$(tt.params.git-org)/$(tt.params.source-repo).git
           - name: is-infra-repo-url
-            value: https://AnasHijazi@github.com/$(tt.params.git-org)/ace-infra.git
+            value: https://AnasHijazi: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@github.com/$(tt.params.git-org)/ace-infra.git
           - name: git-ops-repo-url
-            value: https://AnasHijazi@github.com/$(tt.params.git-org)/cluster-gitops.git
+            value: https://AnasHijazi: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@github.com/$(tt.params.git-org)/cluster-gitops.git
           - name: gitops-apps-repo-full-name
             value: $(tt.params.git-org)/cluster-gitops
         pipelineRef:
